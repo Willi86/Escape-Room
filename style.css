@@ -53,6 +53,7 @@ h1{
 }
 
 
+
 /*header{    the big banner 
         background-image: url("Big-photo.jpg");
         background-size: cover;
@@ -69,7 +70,7 @@ h1{
     color: rgb(255, 255, 255);
     text-align: center;
     position: absolute;
-    width: 390px;
+    width: 100%; /* this is the width of the main-nav - remember not to touch this you stupid idiot */
     height: 100px;
    }
 
@@ -101,16 +102,14 @@ h1{
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-
+   
 }
 .stupid-banner img{
-    max-width: 363px;
-    max-height: 219px;
-    margin: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-top:100px;
-    padding-left: 0px;
+    height: 20vh;/*100% view height*/
+    width: 100vw;/* 100% view width*/
+    position: absolute;
+    top: 100px;
+    
 }
 
 
