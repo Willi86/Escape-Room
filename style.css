@@ -43,7 +43,7 @@ a{
 }
 */
 
-h1{
+h1{ /*Here is the company name */
     position: absolute;
     margin-top: 20px;;
     font-family: "Roboto";
@@ -57,7 +57,7 @@ h1{
 h1 span{
     display: block;
 }
-.Logo {
+.Logo {/*logo border and logo font*/
     position: absolute;
     border: #ffffff 5px solid;
     border-radius: 10%;
@@ -72,7 +72,7 @@ h1 span{
     display: flex;
     justify-content: left;
 }
-h2{
+h2{/*this is for the logo*/
     padding:3px;
     padding-top: 0.01em;
     margin-left: 3px ;
