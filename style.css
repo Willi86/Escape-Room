@@ -203,11 +203,62 @@ li {
     margin: 11px 2px;
    
 }
+.First-computer img,.Second-computer img{
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
 
+/*.First-computer article h3,.{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #011827;
+    margin-bottom: 20px;
+}*/
+.First-computer-article h3,.second-computer-article h3{
+  font-family:"Roboto";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 27px;
+    padding: 12px;
+    text-align: left;
+}
+.First-computer-article h5,.second-computer-article h5{
 
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight:500;
+    font-size: 18px;
+    text-align: left;
+    color: #011827;
+    margin-bottom: 20px;
+    padding: 19px;
+    padding-right:40px;
+    
+}
+.First-computer-article button,.second-computer-article button{
+    font-family: Roboto;
+    background-color: #e3170a;
+    border: none;
+    color: #ffffff;
+    padding: 10px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 3px;
+    margin: 30px 19px;
+    
+}
+/*Here i ended the first and second computer section*/
 
-
-
+/*this is for the review and book section*/
 .second-aside{
     display:none;
 }
@@ -334,7 +385,69 @@ li {
     padding-top: 10px;
 
 }
+/* Mission impossible AKA footer */
+footer{
+    
+    justify-content: left;
+    padding: 0px;
+    margin: 0px;
+    background-color: #011827;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    padding: 20px;
+    margin-top: 2px;
+}
 
+
+.important a{
+    font-weight: bolder !important;
+}
+.First-ul p{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: light;
+    font-size: 14px;
+    text-align: left;
+    color: #ffffff;
+    padding-left: 10px;
+    margin-top: 10px;
+    
+
+}
+.First-ul a,.Second-ul a,.Third-ul a,.Fourth-ul a{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFFFFF;
+  
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+}
+/*this is for the footer / the truth from here i just kept testing numbers until it worked */
+.Second-ul li,.Third-ul li,.Fourth-ul li{
+    display: block;
+    padding: 0;
+    block-size: 9px;
+    margin-left: 10px;
+    margin-top: 25px;;
+    
+}
+.Third-ul {
+
+ margin-top: 30px;
+ block-size: 50px;
+}
+.Fourth-ul{
+    margin-top: 30px;
+    block-size: 200px;
+}
 /*
 
 @media only screen and (max-width: 600px) {
@@ -360,7 +473,7 @@ li {
     }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
     .button-menu {
         display: none;
     }
