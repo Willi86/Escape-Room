@@ -1,15 +1,16 @@
 
 /*I will start with the photos and see how i will go from there */
-.S-hacker{max-width: 363px;
-    max-height: 219px;
-}
+
+
 .big-photo{
-    background-image:url("S-hacker.jpg");
+    background-image:url("Big-photo.jpg");
     background-size: cover;
     background-position: center;
     height: 468px;
     display: flex;
     flex-direction: column;
+    border: 5px solid red;  
+
 }
 *{
     margin: 0;
@@ -58,16 +59,118 @@ h1{
     color:#ffffff;
     text-align: center;
 }
-@media only screen and (max-width: 900px ) {
-    
-    .s-hacker{
-        max-width: 363px;
-        max-height: 219px;
-    }
+
  
     
     *{
         margin: 0;
       
     }
+
+.left-challenge, .right-challenge,.middle-challenge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 0;
+    margin: 20px;
+    border-radius: 10px;
 }
+
+    
+
+
+
+
+
+
+    .stupid-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    ;
+    }
+    .stupid-container img{
+         max-width: 363px;
+         max-height: 219px;
+         border-top-right-radius: 4%;
+         border-top-left-radius: 4%;
+    }
+    .stupid-container h4{
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+        padding: 15px;
+        margin: 1px;
+    }
+    .stupid-container p{
+        font-family: "Roboto";
+        font-style: italic;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 19px;
+        text-align: center;
+        color: #000000;
+        padding: 10px;
+        margin: 10px;
+    }
+    .stupid-container button{
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #B91E1E;
+        border-radius: 4px;
+        padding: 13px;
+        margin-bottom: 10px;
+        margin-left:55% ;
+        border-style: none;
+
+    }
+    .stupid-container span img {
+        background-color: #FFFFFF;
+        color: #b91e1e;
+        padding-left:10px;
+        margin: 1px;
+    }
+    .participants-number {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;;   
+        font-size: 9px;
+        color: #000000; 
+        position: absolute;
+         padding-left: 290px;
+         padding-top: 10px;
+       
+    }
+
+
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="*"] {
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+      display: none;
+    }
+    .main-nav-mobile {
+      display: block;
+    }
+    .S-hacker{
+        max-width: screen 100%;
+    }
+  }
