@@ -188,4 +188,12 @@ header{  /*  the big banner */
         max-width: screen 100%;
     }
   }
+  @media screen and (min-width: 600px) {
+    .button-menu {
+      display: none;
+    }
+   
+  }
+    
+  
   /*
