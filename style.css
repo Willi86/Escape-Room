@@ -188,6 +188,21 @@ li {
     text-align: center;
     font-family: "Roboto";
 }
+.blue-btn{
+    font-family: Roboto;
+    background-color: #011827;
+    border: 1.5px solid #8acfe5;
+    color: #8acfe5;
+    padding: 10px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 3px;
+    margin: 11px 2px;
+   
+}
 
 
 
