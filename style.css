@@ -53,7 +53,7 @@ h1{
 }
 
 
-header{  /*  the big banner */
+/*header{    the big banner 
         background-image: url("Big-photo.jpg");
         background-size: cover;
         background-position: center;
@@ -62,7 +62,7 @@ header{  /*  the big banner */
         flex-direction: column;
     }
 
-
+*/
 .main-nav { /* this is the main-nav not the list*/
     background-color: #011827;
     text-align: center;
@@ -96,7 +96,22 @@ header{  /*  the big banner */
 
 
 
+.stupid-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
 
+}
+.stupid-banner img{
+    max-width: 363px;
+    max-height: 219px;
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top:100px;
+    padding-left: 0px;
+}
 
 
     .stupid-container{ /* the container for the three challenges */
