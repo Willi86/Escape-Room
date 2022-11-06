@@ -1,0 +1,73 @@
+
+/*I will start with the photos and see how i will go from there */
+.S-hacker{max-width: 363px;
+    max-height: 219px;
+}
+.big-photo{
+    background-image:url("S-hacker.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 468px;
+    display: flex;
+    flex-direction: column;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*
+a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 30px;
+    font-size: 24px;
+    font-style:bolder;
+    font-family: "Roboto";
+    display:inline-flex;
+    justify-content: center;
+    margin-top: 140px;
+
+}
+.main-nav{
+    position: absolute;
+    left: 25%;
+    font-weight: bold;
+}
+*/
+
+h1{
+    position: absolute;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    color: #b91e1e;
+
+}
+.header{
+    background-color:  #011827;;
+    height: 216px;
+}
+
+.header, footer {
+    background-color: #011827;
+    text-align: center;
+    color:#ffffff;
+    text-align: center;
+}
+@media only screen and (max-width: 900px ) {
+    
+    .s-hacker{
+        max-width: 363px;
+        max-height: 219px;
+    }
+ 
+    
+    *{
+        margin: 0;
+      
+    }
+}
