@@ -1,17 +1,20 @@
 
 /*I will start with the photos and see how i will go from there */
 
-
-.big-photo{
-    background-image:url("Big-photo.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 468px;
-    display: flex;
-    flex-direction: column;
-    border: 5px solid red;  
-
-}
+button div {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+  }
+  .button-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+   border: none;
+    background-color: transparent;
+   
+  }
 *{
     margin: 0;
     padding: 0;
@@ -48,26 +51,37 @@ h1{
     color: #b91e1e;
 
 }
-.header{
-    background-color:  #011827;;
-    height: 216px;
-}
 
-.header, footer {
-    background-color: #011827;
-    text-align: center;
-    color:#ffffff;
-    text-align: center;
-}
 
- 
-    
-    *{
-        margin: 0;
-      
+header{  /*  the big banner */
+        background-image: url("Big-photo.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
     }
 
-.left-challenge, .right-challenge,.middle-challenge{
+
+.main-nav { /* this is the main-nav not the list*/
+    background-color: #011827;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    width: 390px;
+    height: 100px;
+   }
+
+   li{ /*list styling*/
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 75px;
+   }
+    
+    
+
+.left-challenge, .right-challenge,.middle-challenge{  /* the three challenges "with the stars" */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,20 +99,20 @@ h1{
 
 
 
-    .stupid-container{
+    .stupid-container{ /* the container for the three challenges */
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0px;
     ;
     }
-    .stupid-container img{
+    .stupid-container img{ /* the images for the three challenges */
          max-width: 363px;
          max-height: 219px;
          border-top-right-radius: 4%;
          border-top-left-radius: 4%;
     }
-    .stupid-container h4{
+    .stupid-container h4{/* the h4 for the three challenges */
         font-family: "Roboto";
         font-style: normal;
         font-weight: bold;
@@ -109,7 +123,7 @@ h1{
         padding: 15px;
         margin: 1px;
     }
-    .stupid-container p{
+    .stupid-container p{ /* the p for the three challenges */
         font-family: "Roboto";
         font-style: italic;
         font-weight: bold;
@@ -120,7 +134,7 @@ h1{
         padding: 10px;
         margin: 10px;
     }
-    .stupid-container button{
+    .stupid-container button{ /* the button for the three challenges */
         font-family: "Roboto";
         font-style: normal;
         font-weight: normal;
@@ -136,13 +150,13 @@ h1{
         border-style: none;
 
     }
-    .stupid-container span img {
+    .stupid-container span img { /* the span "Stars"for the three challenges */
         background-color: #FFFFFF;
         color: #b91e1e;
         padding-left:10px;
         margin: 1px;
     }
-    .participants-number {
+    .participants-number {/* the participants number for the three challenges */
         font-family: "Roboto";
         font-style: normal;
         font-weight: normal;;   
@@ -154,17 +168,17 @@ h1{
        
     }
 
-
+/*
 
 @media only screen and (max-width: 600px) {
-    /* For mobile phones: */
+    /* For mobile phones: *
     [class*="*"] {
       width: 100%;
     }
 }
-
-@media only screen and (max-width: 600px) {
-    .main-nav {
+*/
+@media only screen and (max-width: 600px) { /* for mobile phones-Don't -forget to learn more about this stuff */
+    .main-nav li{
       display: none;
     }
     .main-nav-mobile {
@@ -174,3 +188,4 @@ h1{
         max-width: screen 100%;
     }
   }
+  /*
