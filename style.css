@@ -43,21 +43,26 @@ a{
 }
 */
 
-h1{ /*Here is the company name */
+h1 {
+    /*Here is the company name */
     position: absolute;
-    margin-top: 20px;;
+    margin-top: 20px;
+    ;
     font-family: "Roboto";
     font-style: normal;
     font-size: 20px;
     text-align: center;
     color: #ffffff;
     margin-left: 130px;
-    
+
 }
-h1 span{
+
+h1 span {
     display: block;
 }
-.Logo {/*logo border and logo font*/
+
+.Logo {
+    /*logo border and logo font*/
     position: absolute;
     border: #ffffff 5px solid;
     border-radius: 10%;
@@ -67,22 +72,25 @@ h1 span{
     margin-top: 20px;
     margin-left: 15px;
     margin-bottom: 10px;
-    padding-bottom: 0px;;
+    padding-bottom: 0px;
+    ;
     font-family: "Roboto";
     display: flex;
     justify-content: left;
 }
-h2{/*this is for the logo*/
-    padding:3px;
+
+h2 {
+    /*this is for the logo*/
+    padding: 3px;
     padding-top: 0.01em;
-    margin-left: 3px ;
+    margin-left: 3px;
     margin-bottom: 3px;
     margin-top: 30%;
     border: #ffffff 1px solid;
     border-radius: 30%;
     width: 15px;
-    background-color: #FFFFFF;   
-    font-weight: normal;  
+    background-color: #FFFFFF;
+    font-weight: normal;
 }
 
 
@@ -161,7 +169,9 @@ li {
     left: 60px;
     margin: 40px;
 }
-.header-btn2,.middle-p-btn {
+
+.header-btn2,
+.middle-p-btn {
     font-family: Roboto;
 
     background-color: #8acfe5;
@@ -174,17 +184,19 @@ li {
     font-size: 13px;
     font-weight: 800;
     border-radius: 3px;
-    margin:1px 2px;
+    margin: 1px 2px;
     /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
 }
-.header-btn,.middle-p-btn2 {
+
+.header-btn,
+.middle-p-btn2 {
     font-family: Roboto;
     background: none;
     border: none;
     color: #8acfe5;
     padding: 15px 32px;
     text-align: center;
-    text-decoration:underline;
+    text-decoration: underline;
     display: inline-block;
     font-size: 13px;
     font-weight: 800;
@@ -192,19 +204,22 @@ li {
     margin: 4px 2px;
 }
 
-.middle-p-btn,.middle-p-btn2 {
+.middle-p-btn,
+.middle-p-btn2 {
     margin-top: 20px;
     display: block;
     margin-left: 30%;
 }
-.blue-sec{
+
+.blue-sec {
     background-color: #011827;
     color: #ffffff;
     padding: 90px;
     margin-top: 20px;
-   margin-block-end: 0;
+    margin-block-end: 0;
 }
-.blue-Article{
+
+.blue-Article {
 
     display: flex;
     flex-direction: column;
@@ -219,7 +234,8 @@ li {
     text-align: center;
     font-family: "Roboto";
 }
-.blue-btn{
+
+.blue-btn {
     font-family: Roboto;
     background-color: #011827;
     border: 1.5px solid #8acfe5;
@@ -232,9 +248,11 @@ li {
     font-weight: 500;
     border-radius: 3px;
     margin: 11px 2px;
-   
+
 }
-.First-computer img,.Second-computer img{
+
+.First-computer img,
+.Second-computer img {
     width: 100%;
     height: 100%;
     margin-top: 0px;
@@ -251,28 +269,33 @@ li {
     color: #011827;
     margin-bottom: 20px;
 }*/
-.First-computer-article h3,.second-computer-article h3{
-  font-family:"Roboto";
+.First-computer-article h3,
+.second-computer-article h3 {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 800;
     font-size: 27px;
     padding: 12px;
     text-align: left;
 }
-.First-computer-article h5,.second-computer-article h5{
+
+.First-computer-article h5,
+.second-computer-article h5 {
 
     font-family: "Roboto";
     font-style: normal;
-    font-weight:500;
+    font-weight: 500;
     font-size: 18px;
     text-align: left;
     color: #011827;
     margin-bottom: 20px;
     padding: 19px;
-    padding-right:40px;
-    
+    padding-right: 40px;
+
 }
-.First-computer-article button,.second-computer-article button{
+
+.First-computer-article button,
+.second-computer-article button {
     font-family: Roboto;
     background-color: #e3170a;
     border: none;
@@ -285,30 +308,36 @@ li {
     font-weight: 700;
     border-radius: 3px;
     margin: 30px 19px;
-    
+
 }
+
 /*Here i ended the first and second computer section*/
 
 /*this is for the review and book section*/
-.second-aside{
-    display:none;
+.second-aside {
+    display: none;
 }
-.first-aside img{
+
+.first-aside img {
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-left: 10px;;
-    margin-top:400px;
+    margin-left: 10px;
+    ;
+    margin-top: 400px;
     margin-bottom: 10px;
     padding: 0;
 }
-.first-aside img{
-   border-radius: 50%;;
-   border: 20px solid #fffdfe;
-   height: 50px;
-   width: 50px;
+
+.first-aside img {
+    border-radius: 50%;
+    ;
+    border: 20px solid #fffdfe;
+    height: 50px;
+    width: 50px;
 }
-.first-aside p{
+
+.first-aside p {
     font-family: Roboto;
     font-style: italic;
     font-weight: 600;
@@ -321,7 +350,8 @@ li {
     padding: 0;
 
 }
-.first-aside span{
+
+.first-aside span {
     font-family: Roboto;
     font-style: normal;
     font-weight: 600;
@@ -416,9 +446,10 @@ li {
     padding-top: 10px;
 
 }
+
 /* Mission impossible AKA footer */
-footer{
-    
+footer {
+
     justify-content: left;
     padding: 0px;
     margin: 0px;
@@ -434,10 +465,11 @@ footer{
 }
 
 
-.important a{
+.important a {
     font-weight: bolder !important;
 }
-.First-ul p{
+
+.First-ul p {
     font-family: "Roboto";
     font-style: normal;
     font-weight: light;
@@ -446,39 +478,51 @@ footer{
     color: #ffffff;
     padding-left: 10px;
     margin-top: 10px;
-    
+
 
 }
-.First-ul a,.Second-ul a,.Third-ul a,.Fourth-ul a{
+
+.First-ul a,
+.Second-ul a,
+.Third-ul a,
+.Fourth-ul a {
     margin-left: 10px;
     margin-top: 30px;
     font-size: 18px;
     font-weight: 300;
     color: #FFFFFF;
-  
+
 }
-footer nav{
+
+footer nav {
     display: flex;
     flex-direction: column;
 }
+
 /*this is for the footer / the truth from here i just kept testing numbers until it worked */
-.Second-ul li,.Third-ul li,.Fourth-ul li{
+.Second-ul li,
+.Third-ul li,
+.Fourth-ul li {
     display: block;
     padding: 0;
     block-size: 9px;
     margin-left: 10px;
-    margin-top: 25px;;
-    
+    margin-top: 25px;
+    ;
+
 }
+
 .Third-ul {
 
- margin-top: 30px;
- block-size: 50px;
+    margin-top: 30px;
+    block-size: 50px;
 }
-.Fourth-ul{
+
+.Fourth-ul {
     margin-top: 30px;
     block-size: 200px;
 }
+
 /*
 
 @media only screen and (max-width: 600px) {
@@ -502,7 +546,7 @@ footer nav{
     .S-hacker {
         max-width: screen 100%;
     }
-    
+
 }
 
 @media screen and (min-width: 500px) {
