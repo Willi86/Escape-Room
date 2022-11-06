@@ -43,16 +43,47 @@ a{
 }
 */
 
-h1 {
+h1{
     position: absolute;
+    margin-top: 20px;;
     font-family: "Roboto";
     font-style: normal;
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
-    color: #b91e1e;
-
+    color: #ffffff;
+    margin-left: 130px;
+    
 }
-
+h1 span{
+    display: block;
+}
+.Logo {
+    position: absolute;
+    border: #ffffff 5px solid;
+    border-radius: 10%;
+    width: 100px;
+    height: 60px;
+    color: #011827;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;;
+    font-family: "Roboto";
+    display: flex;
+    justify-content: left;
+}
+h2{
+    padding:3px;
+    padding-top: 0.01em;
+    margin-left: 3px ;
+    margin-bottom: 3px;
+    margin-top: 30%;
+    border: #ffffff 1px solid;
+    border-radius: 30%;
+    width: 15px;
+    background-color: #FFFFFF;   
+    font-weight: normal;  
+}
 
 
 /*header{    the big banner 
