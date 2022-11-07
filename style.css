@@ -313,7 +313,7 @@ li {
 
 /*Here i ended the first and second computer section*/
 
-/*this is for the review and book section*/
+/*this is for the review and booking section*/
 .second-aside {
     display: none;
 }
@@ -322,19 +322,17 @@ li {
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-left: 10px;
-    ;
     margin-top: 400px;
     margin-bottom: 10px;
-    padding: 0;
 }
-
+/*why did i call the same class twice?*/
 .first-aside img,.second-aside img{
     border-radius: 50%;
-    ;
-    border: 20px solid #fffdfe;
+    /*border: 20px solid #fffdfe;  -don't need it anymore*/
     height: 50px;
     width: 50px;
+    margin-left: 30px;
+    padding:10px;
 }
 
 .first-aside p,.second-aside p{
@@ -551,6 +549,16 @@ footer nav {
     }
 }
 */
+.Popular-G{
+font-family: Roboto;
+font-weight: 500;
+font-size: 23px;
+margin: 4%;
+margin-left: 10%;
+
+
+
+}
 @media only screen and (max-width: 600px) {
 
     /* for mobile phones-Don't -forget to learn more about this stuff */
@@ -668,19 +676,26 @@ footer nav {
 
 .first-aside p{
  contain:layout;/*testing this only */
- padding-right: 52%; 
+ padding-right: 60%; 
 
 }
 .second-aside{
     position:absolute;
-    margin-top: -655px;
+    margin-top: -58.7%; /*remember to search on this, why do i have minus values*/
     margin-bottom: 150px;
     display: block;
     margin-left: 50%;
+    padding-left: 1px;
 }
 .second-aside p{
-    padding-left:1%;
-    padding-right: 15%;
+    padding-left:2%;
+    padding-right: 30%;
+
+}
+.Popular-G{
+margin-left: 30%;
+font-size: 40px;
+font-weight: 400;
 
 }
 
