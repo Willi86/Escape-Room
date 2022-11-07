@@ -534,6 +534,13 @@ footer nav {
     margin-top: 70px;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
+    font-family: Roboto;
+    list-style: none;
+    text-decoration: none;
+}
+.main-nav li a:hover {
+    color: #8acfe5;
 }
 /*
 
@@ -565,14 +572,25 @@ footer nav {
     .button-menu {
         display: none;
     }
-    .main-nav{
-        
-        
-    }
+   
     .main-nav li {
         display: inline;
     }
-
+    .First-h1 {
+        display: flex;
+        padding-left: 7px;
+        margin-top: 30px;;
+    }
+    .First-h1,.First-h1 span {
+       
+        font-size: 24px;
+        text-align: center;
+        padding-inline-start: 10px;
+         /* I used these because the middle
+          word is not in span so this solved my problem with spacing between words */
+        padding-inline-end: 10px;
+        
+    }
 }
 
 
