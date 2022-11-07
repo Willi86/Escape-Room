@@ -318,7 +318,7 @@ li {
     display: none;
 }
 
-.first-aside img {
+.first-aside img,.second-aside img {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -329,7 +329,7 @@ li {
     padding: 0;
 }
 
-.first-aside img {
+.first-aside img,.second-aside img{
     border-radius: 50%;
     ;
     border: 20px solid #fffdfe;
@@ -337,7 +337,7 @@ li {
     width: 50px;
 }
 
-.first-aside p {
+.first-aside p,.second-aside p{
     font-family: Roboto;
     font-style: italic;
     font-weight: 600;
@@ -351,7 +351,7 @@ li {
 
 }
 
-.first-aside span {
+.first-aside span,.second-aside span{
     font-family: Roboto;
     font-style: normal;
     font-weight: 600;
@@ -617,7 +617,7 @@ footer nav {
         display: inline-block;
         justify-content: center;
         margin-top: 130px;
-        margin-left: 40%;
+        margin-left: 25%;
         
     }
     .header-btn{
@@ -625,9 +625,42 @@ footer nav {
       color : #ffffff;
       text-decoration: none;
       font-weight: 500;
+      padding-left: 50px;
+      padding-right: 50px;
 
     }
+    .header-btn2{
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+    .first-aside{
+     margin-top: 470px;
+     margin-bottom: 150px;
+     display: block;
+     margin-left: 5%;
+     padding-left: 80px;
+}
+.second-aside{
+    display: block;
 }
 
+.first-aside p{
+ contain:layout;/*testing this only */
+ padding-right: 52%; 
 
+}
+.second-aside{
+    position:absolute;
+    margin-top: -655px;
+    margin-bottom: 150px;
+    display: block;
+    margin-left: 50%;
+}
+.second-aside p{
+    padding-left:1%;
+    padding-right: 15%;
 
+}
+
+}
