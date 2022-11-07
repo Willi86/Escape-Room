@@ -620,7 +620,10 @@ footer nav {
         margin-left: 25%;
         
     }
-    .header-btn{
+    .header-btn,.middle-p-btn2,.middle-p-btn {
+        /*Don't forget middle page button(RED ONE) 
+        is here i put the blue one and 
+        i will change it's color some where else*/
       background-color : #e3170a;
       color : #ffffff;
       text-decoration: none;
@@ -629,6 +632,24 @@ footer nav {
       padding-right: 50px;
 
     }
+    .middle-p-btn{
+        background-color: #8acfe5;
+        color: #011827;
+        font-weight:900;
+    }
+            /*Now positioning*/
+
+    .middle-p-btn{
+        display: inline;
+        margin:20px;
+        margin-left: 50%;
+    }
+    .middle-p-btn2{
+       position: absolute;
+       margin-top:-6%;
+        
+    }
+    /*Stop changing this , it's for the header buttons*/
     .header-btn2{
         padding-left: 50px;
         padding-right: 50px;
