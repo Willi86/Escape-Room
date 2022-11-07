@@ -318,24 +318,28 @@ li {
     display: none;
 }
 
-.first-aside img,.second-aside img {
+.first-aside img,
+.second-aside img {
     display: flex;
     flex-direction: row;
     position: relative;
     margin-top: 400px;
     margin-bottom: 10px;
 }
+
 /*why did i call the same class twice?*/
-.first-aside img,.second-aside img{
+.first-aside img,
+.second-aside img {
     border-radius: 50%;
     /*border: 20px solid #fffdfe;  -don't need it anymore*/
     height: 50px;
     width: 50px;
     margin-left: 30px;
-    padding:10px;
+    padding: 10px;
 }
 
-.first-aside p,.second-aside p{
+.first-aside p,
+.second-aside p {
     font-family: Roboto;
     font-style: italic;
     font-weight: 600;
@@ -349,7 +353,8 @@ li {
 
 }
 
-.first-aside span,.second-aside span{
+.first-aside span,
+.second-aside span {
     font-family: Roboto;
     font-style: normal;
     font-weight: 600;
@@ -522,12 +527,13 @@ footer nav {
 }
 
 .main-nav li {
-  
+
     padding-top: 150px;
-    padding:90px;
+    padding: 90px;
 }
+
 .main-nav li a {
-   
+
     position: absolute;
     margin-top: 70px;
     justify-content: center;
@@ -537,9 +543,11 @@ footer nav {
     list-style: none;
     text-decoration: none;
 }
+
 .main-nav li a:hover {
     color: #8acfe5;
 }
+
 /*
 
 @media only screen and (max-width: 600px) {
@@ -549,16 +557,17 @@ footer nav {
     }
 }
 */
-.Popular-G{
-font-family: Roboto;
-font-weight: 500;
-font-size: 23px;
-margin: 4%;
-margin-left: 10%;
+.Popular-G {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 23px;
+    margin: 4%;
+    margin-left: 10%;
 
 
 
 }
+
 @media only screen and (max-width: 600px) {
 
     /* for mobile phones-Don't -forget to learn more about this stuff */
@@ -576,25 +585,32 @@ margin-left: 10%;
 
 }
 
-@media screen and (min-width: 500px) { /* for tablets and desktops */
+@media screen and (min-width: 500px) {
+
+    /* for tablets and desktops */
     .button-menu {
         display: none;
     }
-    .main-nav{ 
-    /* this is for the nav bar, and i have a problem here, can't give it bigger height */
+
+    .main-nav {
+        /* this is for the nav bar, and i have a problem here, can't give it bigger height */
         position: absolute;
         padding: 10px;
-        height: 150px;/*just testing, don't forget to change it */
-    }
-    .Big-photo{
-        margin-top: 50px;
-        padding-top:0px; /*testing */
+        height: 150px;
+        /*just testing, don't forget to change it */
     }
 
-   
+    .Big-photo {
+        margin-top: 50px;
+        padding-top: 0px;
+        /*testing */
+    }
+
+
     .main-nav li {
         display: inline;
     }
+
     /*Don't forget- you are fixing the stupid links*/
     .main-nav li a {
         display: inline-block;
@@ -603,100 +619,119 @@ margin-left: 10%;
         list-style: none;
         text-decoration: none;
     }
+
     /*now fixing the h1 + the logo*/
 
     .First-h1 {
         display: flex;
         padding-left: 7px;
-        margin-top: 60px;;
+        margin-top: 60px;
+        ;
     }
-    .First-h1,.First-h1 span {
-       
+
+    .First-h1,
+    .First-h1 span {
+
         font-size: 24px;
         text-align: center;
         padding-inline-start: 10px;
-         /* I used these because the middle
+        /* I used these because the middle
           word is not in span so this solved my problem with spacing between words */
         padding-inline-end: 10px;
-        
+
     }
+
     /*button challenges*/
-    .First-button{
+    .First-button {
         display: inline-block;
         justify-content: center;
         margin-top: 130px;
         margin-left: 25%;
-        
+
     }
-    .header-btn,.middle-p-btn2,.middle-p-btn {
+
+    .header-btn,
+    .middle-p-btn2,
+    .middle-p-btn {
         /*Don't forget middle page button(RED ONE) 
         is here i put the blue one and 
         i will change it's color some where else*/
-      background-color : #e3170a;
-      color : #ffffff;
-      text-decoration: none;
-      font-weight: 500;
-      padding-left: 50px;
-      padding-right: 50px;
-
-    }
-    .middle-p-btn{
-        background-color: #8acfe5;
-        color: #011827;
-        font-weight:900;
-    }
-            /*Now positioning*/
-
-    .middle-p-btn{
-        display: inline;
-        margin:20px;
-        margin-left: 50%;
-    }
-    .middle-p-btn2{
-       position: absolute;
-       margin-top:-6%;
-        
-    }
-    /*Stop changing this , it's for the header buttons*/
-    .header-btn2{
+        background-color: #e3170a;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 500;
         padding-left: 50px;
         padding-right: 50px;
 
     }
-    .first-aside{
-     margin-top: 470px;
-     margin-bottom: 150px;
-     display: block;
-     margin-left: 5%;
-     padding-left: 80px;
-}
-.second-aside{
-    display: block;
-}
 
-.first-aside p{
- contain:layout;/*testing this only */
- padding-right: 60%; 
+    .middle-p-btn {
+        background-color: #8acfe5;
+        color: #011827;
+        font-weight: 900;
+    }
 
-}
-.second-aside{
-    position:absolute;
-    margin-top: -58.7%; /*remember to search on this, why do i have minus values*/
-    margin-bottom: 150px;
-    display: block;
-    margin-left: 50%;
-    padding-left: 1px;
-}
-.second-aside p{
-    padding-left:2%;
-    padding-right: 30%;
+    /*Now positioning*/
 
-}
-.Popular-G{
-margin-left: 30%;
-font-size: 40px;
-font-weight: 400;
+    .middle-p-btn {
+        display: inline;
+        margin: 20px;
+        margin-left: 50%;
+    }
 
-}
+    .middle-p-btn2 {
+        position: absolute;
+        margin-top: -6%;
+
+    }
+
+    /*Stop changing this , it's for the header buttons*/
+    .header-btn2 {
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+    .first-aside {
+        margin-top: 470px;
+        margin-bottom: 150px;
+        display: block;
+        margin-left: 5%;
+        padding-left: 80px;
+    }
+
+    .second-aside {
+        display: block;
+    }
+
+    .first-aside p {
+        contain: layout;
+        /*testing this only */
+        padding-right: 60%;
+
+    }
+
+    .second-aside {
+        position: absolute;
+        margin-top: -58.7%;
+        /*remember to search on this, why do i have minus values*/
+        margin-bottom: 150px;
+        display: block;
+        margin-left: 50%;
+        padding-left: 1px;
+    }
+
+    .second-aside p {
+        padding-left: 2%;
+        padding-right: 30%;
+
+    }
+
+    .Popular-G {
+        margin-left: 30%;
+        font-size: 40px;
+        font-weight: 400;
+
+    }
 
 }
