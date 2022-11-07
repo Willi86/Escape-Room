@@ -572,14 +572,35 @@ footer nav {
     .button-menu {
         display: none;
     }
+    .main-nav{ 
+    /* this is for the nav bar, and i have a problem here, can't give it bigger height */
+        position: absolute;
+        padding: 10px;
+        height: 150px;/*just testing, don't forget to change it */
+    }
+    .Big-photo{
+        margin-top: 50px;
+        padding-top:0px; /*testing */
+    }
+
    
     .main-nav li {
         display: inline;
     }
+    /*Don't forget- you are fixing the stupid links*/
+    .main-nav li a {
+        display: inline-block;
+        padding: 40px;
+        padding-left: 10px;
+        list-style: none;
+        text-decoration: none;
+    }
+    /*now fixing the h1 + the logo*/
+    
     .First-h1 {
         display: flex;
         padding-left: 7px;
-        margin-top: 30px;;
+        margin-top: 60px;;
     }
     .First-h1,.First-h1 span {
        
@@ -591,6 +612,8 @@ footer nav {
         padding-inline-end: 10px;
         
     }
+
+
 }
 
 
