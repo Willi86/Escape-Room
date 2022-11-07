@@ -596,7 +596,7 @@ footer nav {
         text-decoration: none;
     }
     /*now fixing the h1 + the logo*/
-    
+
     .First-h1 {
         display: flex;
         padding-left: 7px;
@@ -612,8 +612,21 @@ footer nav {
         padding-inline-end: 10px;
         
     }
+    /*button challenges*/
+    .First-button{
+        display: inline-block;
+        justify-content: center;
+        margin-top: 130px;
+        margin-left: 40%;
+        
+    }
+    .header-btn{
+      background-color : #e3170a;
+      color : #ffffff;
+      text-decoration: none;
+      font-weight: 500;
 
-
+    }
 }
 
 
