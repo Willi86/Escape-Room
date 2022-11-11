@@ -23,6 +23,7 @@ button div {
 
 
 
+
 /*
 a{
     text-decoration: none;
@@ -251,10 +252,11 @@ li {
 
 .First-computer img,
 .Second-computer img {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height:80%;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+   
 }
 
 /*.First-computer article h3,.{
@@ -273,9 +275,10 @@ li {
     font-style: normal;
     font-weight: 800;
     font-size: 27px;
-    padding: 12px;
+    padding: 30px;
     text-align: left;
 }
+
 
 .First-computer-article h5,
 .second-computer-article h5 {
@@ -710,6 +713,29 @@ footer nav {
 
 
     }
+
+    .Grid2 figure img {
+     padding-left: 17vh;
+     
+
+    }
+    .Grid{ /*the computer photos*/
+        background-color: #ffffff;
+        display: flex;
+        position: relative;
+        margin-bottom: 0;
+        
+        }
+        .Grid2{
+
+            display: flex;
+            position: relative;
+            margin-bottom: 0;
+            flex-direction: row-reverse;
+
+        }
+
+
  /*Stop changing this , it's for the header buttons*/
  .header-btn2 {
     padding-left: 50px;
@@ -743,10 +769,12 @@ footer nav {
         place-items: center;
         font-weight: 500;
 
-
-
-
     }
+
+   
+
+
+
 
     .second-aside1,
     .first-aside1 {
