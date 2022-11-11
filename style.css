@@ -1,4 +1,4 @@
-/*I will start with the photos and see how i will go from there */
+/* */
 
 button div {
     width: 35px;
@@ -7,7 +7,7 @@ button div {
     margin: 6px 0;
 }
 
-.button-menu {
+.button-menu { /* Mobil menu*/
     position: absolute;
     top: 20px;
     right: 20px;
@@ -47,7 +47,6 @@ h1 {
     /*Here is the company name */
     position: absolute;
     margin-top: 20px;
-    ;
     font-family: "Roboto";
     font-style: normal;
     font-size: 20px;
@@ -169,7 +168,7 @@ li {
     left: 60px;
     margin: 40px;
 }
-
+ /* Header buttons */
 .header-btn2,
 .middle-p-btn {
     font-family: Roboto;
@@ -185,7 +184,6 @@ li {
     font-weight: 800;
     border-radius: 3px;
     margin: 1px 2px;
-    /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
 }
 
 .header-btn,
@@ -325,11 +323,7 @@ li {
     position: relative;
     margin-top: 400px;
     margin-bottom: 10px;
-}
 
-/*why did i call the same class twice?*/
-.first-aside img,
-.second-aside img {
     border-radius: 50%;
     /*border: 20px solid #fffdfe;  -don't need it anymore*/
     height: 50px;
@@ -648,7 +642,7 @@ footer nav {
 
     }
 
-    /*button challenges*/
+    /*button challenges
     .First-button {
         display: inline-block;
         justify-content: center;
@@ -656,7 +650,7 @@ footer nav {
         margin-left: 25%;
 
     }
-
+*/
     .header-btn,
     .middle-p-btn2,
     .middle-p-btn {
@@ -672,30 +666,46 @@ footer nav {
 
     }
 
-    .middle-p-btn {
+    .middle-p-container{
+      display:flex;
+      flex-direction:row;
+      /*flex-flow:row;*/
+      margin-left:75vh;
+
+     
+    }
+     .middle-p-btn {
         background-color: #8acfe5;
         color: #011827;
         font-weight: 900;
-    }
+        margin: 15px;
 
+        
+      }
     /*Now positioning*/
 
-    .middle-p-btn {
-        display: inline;
-        margin: 20px;
-        margin-left: 50%;
-    }
 
-    .middle-p-btn2 {
-        position: absolute;
-        margin-top: -6%;
+    .middle-p-btn2 {/*Middle page buttons -red one*/
+
+        margin:15px;
 
     }
+
 
     /*Stop changing this , it's for the header buttons*/
     .header-btn2 {
         padding-left: 50px;
         padding-right: 50px;
+       
+    
+    }
+    .First-button-container{ /* desktop view for the first two buttons*/
+        display:flex;
+        flex-direction: row;
+     margin-left:70vh ;
+     margin-bottom: 10vh;
+     margin-top:-3vh;
+
 
     }
 
