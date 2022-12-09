@@ -1,862 +1,593 @@
-/* */
-
-button div {
-    width: 35px;
-    height: 5px;
-    background-color: rgb(255, 255, 255);
-    margin: 6px 0;
-}
-
-.button-menu { /* Mobil menu*/
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    border: none;
-    background-color: transparent;
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-/*
-a{
-    text-decoration: none;
-    color: #ffffff;
-    padding: 30px;
-    font-size: 24px;
-    font-style:bolder;
-    font-family: "Roboto";
-    display:inline-flex;
-    justify-content: center;
-    margin-top: 140px;
-
-}
-.main-nav{
-    position: absolute;
-    left: 25%;
-    font-weight: bold;
-}
-*/
-
-h1 {
-    /*Here is the company name */
-    position: absolute;
-    margin-top: 20px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-    margin-left: 130px;
-
-}
-
-h1 span {
-    display: block;
-}
-
-.Logo {
-    /*logo border and logo font*/
-    position: absolute;
-    border: #ffffff 5px solid;
-    border-radius: 10%;
-    width: 100px;
-    height: 60px;
-    color: #011827;
-    margin-top: 20px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    padding-bottom: 0px;
-    ;
-    font-family: "Roboto";
-    display: flex;
-    justify-content: left;
-}
-
-h2 {
-    /*this is for the logo*/
-    padding: 3px;
-    padding-top: 0.01em;
-    margin-left: 3px;
-    margin-bottom: 3px;
-    margin-top: 30%;
-    border: #ffffff 1px solid;
-    border-radius: 30%;
-    width: 15px;
-    background-color: #FFFFFF;
-    font-weight: normal;
-}
-
-
-/*header{    the big banner 
-        background-image: url("Big-photo.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
+@media screen and (min-width: 801px) {
+    header {
+      background-color: #011827;
+      color: #ffffff;
     }
-
-*/
-.main-nav {
-    /* this is the main-nav not the list*/
-    background-color: #011827;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    /* this is the width of the main-nav - remember not to touch this you S idiot */
-    height: 100px;
-}
-
-li {
-    /*list styling*/
-    display: inline-flex;
-    justify-content: center;
-    margin-top: 75px;
-}
-
-
-
-.left-challenge,
-.right-challenge,
-.middle-challenge {
-    /* the three challenges "with the stars" */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    padding: 0;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-
-
-.S-banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-
-}
-
-.S-banner img {
-    height: 20vh;
-    /*100% view height*/
-    width: 100vw;
-    /* 100% view width*/
-    position: absolute;
-    top: 100px;
-
-}
-
-.Header-button-container {
-    position: relative;
-    top: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    left: 60px;
-    margin: 40px;
-}
- /* Header buttons */
-.header-btn2,
-.middle-p-btn {
-    font-family: Roboto;
-
-    background-color: #8acfe5;
-    border: none;
-    color: #011827;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 800;
-    border-radius: 3px;
-    margin: 1px 2px;
-}
-
-.header-btn,
-.middle-p-btn2 {
-    font-family: Roboto;
-    background: none;
-    border: none;
-    color: #8acfe5;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: underline;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 800;
-    border-radius: 3px;
-    margin: 4px 2px;
-}
-
-.middle-p-btn,
-.middle-p-btn2 {
-    margin-top: 20px;
-    display: block;
-    margin-left: 30%;
-}
-
-.blue-sec {
-    background-color: #011827;
-    color: #ffffff;
-    padding: 90px;
-    margin-top: 20px;
-    margin-block-end: 0;
-}
-
-.blue-Article {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: #ffffff;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    text-align: center;
-    font-family: "Roboto";
-}
-
-.blue-btn {
-    font-family: Roboto;
-    background-color: #011827;
-    border: 1.5px solid #8acfe5;
-    color: #8acfe5;
-    padding: 10px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 500;
-    border-radius: 3px;
-    margin: 11px 2px;
-
-}
-
-.First-computer img,
-.Second-computer img {
-    width: 75%;
-    height:80%;
-    margin-top: 0px;
-    margin-bottom: 60px;
-   
-}
-
-/*.First-computer article h3,.{
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #011827;
-    margin-bottom: 20px;
-}*/
-.First-computer-article h3,
-.second-computer-article h3 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 27px;
-    padding: 30px;
-    text-align: left;
-}
-
-
-.First-computer-article h5,
-.second-computer-article h5 {
-
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    text-align: left;
-    color: #011827;
-    margin-bottom: 20px;
-    padding: 19px;
-    padding-right: 40px;
-
-}
-
-.First-computer-article button,
-.second-computer-article button {
-    font-family: Roboto;
-    background-color: #e3170a;
-    border: none;
-    color: #ffffff;
-    padding: 10px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 19px;
-    font-weight: 700;
-    border-radius: 3px;
-    margin: 30px 19px;
-
-}
-
-/*Here i ended the first and second computer section*/
-
-/*this is for the review and booking section*/
-.second-aside {
-    display: none;
-}
-
-.first-aside img,
-.second-aside img {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin-top: 400px;
-    margin-bottom: 10px;
-
-    border-radius: 50%;
-    /*border: 20px solid #fffdfe;  -don't need it anymore*/
-    height: 50px;
-    width: 50px;
-    margin-left: 30px;
-    padding: 10px;
-}
-
-.first-aside p,
-.second-aside p {
-    font-family: Roboto;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 14px;
-    color: #011827;
-    margin-left: 100px;
-    position: relative;
-    margin-top: -80px;
-    margin-bottom: 10px;
-    padding: 0;
-
-}
-
-.first-aside span,
-.second-aside span {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 10px;
-    color: #011827;
-    margin-left: 100px;
-    position: relative;
-    margin-top: -80px;
-    margin-bottom: 10px;
-    padding: 0;
-}
-
-.S-container {
-    /* the container for the three challenges */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    ;
-}
-
-.S-container img {
-    /* the images for the three challenges */
-    max-width: 363px;
-    max-height: 219px;
-    border-top-right-radius: 4%;
-    border-top-left-radius: 4%;
-}
-
-.S-container h4 {
-    /* the h4 for the three challenges */
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #000000;
-    padding: 15px;
-    margin: 1px;
-}
-
-.S-container p {
-    /* the p for the three challenges */
-    font-family: "Roboto";
-    font-style: italic;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 19px;
-    text-align: center;
-    color: #000000;
-    padding: 10px;
-    margin: 10px;
-}
-
-.S-container button {
-    /* the button for the three challenges */
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 19px;
-    text-align: center;
-    color: #FFFFFF;
-    background: #B91E1E;
-    border-radius: 4px;
-    padding: 13px;
-    margin-bottom: 10px;
-    margin-left: 55%;
-    border-style: none;
-
-}
-
-.S-container span img {
-    /* the span "Stars"for the three challenges */
-    background-color: #FFFFFF;
-    color: #b91e1e;
-    padding-left: 10px;
-    margin: 1px;
-}
-
-.participants-number {
-    /* the participants number for the three challenges */
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: normal;
-    ;
-    font-size: 9px;
-    color: #000000;
-    position: absolute;
-    padding-left: 290px;
-    padding-top: 10px;
-
-}
-
-/* Mission impossible AKA footer */
-footer {
-
-    justify-content: left;
-    padding: 0px;
-    margin: 0px;
-    background-color: #011827;
-    color: #ffffff;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    text-align: left;
-    padding: 20px;
-    margin-top: 2px;
-}
-
-
-.important a {
-    font-weight: bolder !important;
-}
-
-.First-ul p {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: light;
-    font-size: 14px;
-    text-align: left;
-    color: #ffffff;
-    padding-left: 10px;
-    margin-top: 10px;
-
-
-}
-
-.First-ul a,
-.Second-ul a,
-.Third-ul a,
-.Fourth-ul a {
-    margin-left: 10px;
-    margin-top: 30px;
-    font-size: 18px;
-    font-weight: 300;
-    color: #FFFFFF;
-
-}
-
-footer nav {
-    display: flex;
-    flex-direction: column;
-}
-
-/*this is for the footer / the truth from here i just kept testing numbers until it worked */
-.Second-ul li,
-.Third-ul li,
-.Fourth-ul li {
-    display: block;
-    padding: 0;
-    block-size: 9px;
-    margin-left: 10px;
-    margin-top: 25px;
-    ;
-
-}
-
-.Third-ul {
-
-    margin-top: 30px;
-    block-size: 50px;
-}
-
-.Fourth-ul {
-    margin-top: 30px;
-    block-size: 200px;
-}
-
-.main-nav li {
-
-    padding-top: 150px;
-    padding: 90px;
-}
-
-.main-nav li a {
-
-    position: absolute;
-    margin-top: 70px;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-family: Roboto;
-    list-style: none;
-    text-decoration: none;
-}
-
-.main-nav li a:hover {
-    color: #8acfe5;
-}
-
-/*
-
-@media only screen and (max-width: 600px) {
-    /* For mobile phones: *
-    [class*="*"] {
+    header .top-section {
+      display: flex;
+      justify-content: flex-start;
+      min-height: 144px;
+      min-width: 200px;
       width: 100%;
     }
-}
-*/
-.Popular-G {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 23px;
-    margin: 4%;
-    margin-left: 10%;
-
-
-
-}
-
-@media only screen and (max-width: 750px) {
-
-    /* for mobile phones-Don't -forget to learn more about this stuff */
-    .main-nav li {
-        display: none;
+    header .top-section .esc-logo {
+      width: 128px;
+      height: 82px;
+      margin: 20px 20px;
     }
-
-    .button-menu {
-        display: block;
+    header .top-section h1 {
+      width: 78px;
+      height: 84px;
+      font-weight: 700;
+      font-size: 40px;
+      margin-top: 60px;
+      white-space: nowrap;
     }
-
-    .S-hacker {
-        max-width: screen 100%;
+    header .top-section .s-menu-icon {
+      display: none;
     }
-
-    .first-aside1,
-    .second-aside1 {
-        display: none;
+    nav {
+      background-color: #011827;
+      color: #ffffff;
     }
-}
-
-@media screen and (min-width: 750px) {
-    .first-aside-mobil {
-        display: none;
+    nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
     }
-
-    /* for tablets and desktops */
-    .button-menu {
-        display: none;
+    nav ul a {
+      color: inherit;
+      text-decoration: none;
     }
-
-    .main-nav {
-        /* this is for the nav bar, and i have a problem here, can't give it bigger height */
-        position: absolute;
-        padding: 10px;
-        height: 150px;
-        /*just testing, don't forget to change it */
+    nav ul a li {
+      list-style: none;
+      padding: 20px 0;
+      font-size: 24px;
+      transition: 0.4s;
     }
-
-    .Big-photo {
-        margin-top: 50px;
-        padding-top: 0px;
-        /*testing */
+    nav ul a li:hover {
+      color: #8acfe5;
     }
-
-
-    .main-nav li {
-        display: inline;
+    .close-icon {
+      display: none;
     }
-
-    /*Don't forget- you are fixing the S links*/
-    .main-nav li a {
-        display: inline-block;
-        padding: 40px;
-        padding-left: 10px;
-        list-style: none;
-        text-decoration: none;
+    .hacker-image {
+      display: none;
     }
-
-    /*now fixing the h1 + the logo*/
-
-    .First-h1 {
-        display: flex;
-        padding-left: 7px;
-        margin-top: 60px;
-        ;
+    .hacker-image-desktop {
+      width: 100%;
+      height: auto;
+      z-index: -1;
     }
-
-    .First-h1,
-    .First-h1 span {
-
-        font-size: 24px;
-        text-align: center;
-        padding-inline-start: 10px;
-        /* I used these because the middle
-          word is not in span so this solved my problem with spacing between words */
-        padding-inline-end: 10px;
-
+    .buttons {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-top: -38px;
+      gap: 18px;
     }
-
-    /*button challenges
-    .First-button {
-        display: inline-block;
-        justify-content: center;
-        margin-top: 130px;
-        margin-left: 25%;
-
+    .buttons .on-site-btn {
+      background-color: #8acfe5;
+      color: #011827;
+      border-radius: 4px;
+      border: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      width: 308px;
+      padding: 19px 40px;
     }
-*/
-    .header-btn,
-    .middle-p-btn2,
-    .middle-p-btn {
-        /*Don't forget middle page button(RED ONE) 
-        is here i put the blue one and 
-        i will change it's color some where else*/
-        background-color: #e3170a;
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 500;
-        padding-left: 50px;
-        padding-right: 50px;
-
+    .buttons .online-btn {
+      background-color: #e3170a;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      width: 308px;
+      height: 66px;
+      font-weight: 700;
+      font-size: 24px;
     }
-
-    .middle-p-container{
-      display:flex;
-      flex-direction:row;
-      /*flex-flow:row;*/
-      margin-left:75vh;
-
-     
+    .review-boxes {
+      display: flex;
+      padding: 0 110px;
     }
-     .middle-p-btn {
-        background-color: #8acfe5;
-        color: #011827;
-        font-weight: 900;
-        margin: 15px;
-
-        
+    .review-boxes .review {
+      display: flex;
+      margin-top: 80px;
+      padding: 0 15px;
+    }
+    .review-boxes .review figure img {
+      padding-right: 15px;
+      width: 96px;
+      height: auto;
+    }
+    .review-boxes .review .review-text {
+      font-weight: 400;
+      font-size: 24px;
+      font-style: italic;
+      width: 80%;
+    }
+    .review-boxes .review .review-text .review-info {
+      margin-top: 8px;
+      font-style: normal;
+      font-size: 18px;
+    }
+    section h1 {
+      font-weight: 400;
+      font-size: 36px;
+      margin-top: 108px;
+      text-align: center;
+    }
+    section .challenges-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 87px 53px 0px;
+      gap: 42px;
+    }
+    section .challenges-section .challenges {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      width: 363px;
+      min-height: 446px;
+      position: relative;
+    }
+    section .challenges-section .challenges .challenges-box-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px 8px 0 0;
+    }
+    section .challenges-section .challenges .rating {
+      display: flex;
+      flex-direction: column;
+      padding: 0 18px;
+    }
+    section .challenges-section .challenges .rating p:first-child {
+      font-size: 28px;
+      margin-top: 12px;
+    }
+    section .challenges-section .challenges .rating .rating-stars-text {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    section .challenges-section .challenges .rating .rating-stars-text img {
+      width: 15px;
+      height: 15px;
+      margin: 0 5px;
+    }
+    section .challenges-section .challenges .rating .rating-stars-text p {
+      font-size: 14px;
+      margin-left: 115px;
+      white-space: nowrap;
+    }
+    section .challenges-section .challenges .rating .challenge-info {
+      margin-top: 23px;
+      font-size: 18px;
+    }
+    section .challenges-section .challenges .rating .book-room {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
+      height: 44px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #e3170a;
+      border: none;
+      border-radius: 4px;
+      position: absolute;
+      margin-top: 20px;
+      right: 12px;
+      bottom: 12px;
+      margin-top: 20px;
+    }
+    section #buttons-second {
+      margin: 87px 0;
+    }
+    section .story-container {
+      background-color: #011827;
+      color: #ffffff;
+      height: 500px;
+      margin-top: 56px;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+    }
+    section .story-container p {
+      font-weight: 400;
+      font-size: 28px;
+      width: 602px;
+      margin: 95px auto;
+    }
+    section .story-container button {
+      color: #8acfe5;
+      background-color: #011827;
+      border: #8acfe5 solid 2px;
+      width: 308px;
+      margin: 0 auto;
+      height: 66px;
+      font-weight: 700;
+      font-size: 24px;
+    }
+    .computer-block {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    .computer-block img {
+      width: 100%;
+      height: 100%;
+      max-height: 150%;
+    }
+    .computer-block .computer-text-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 60px 100px;
+    }
+    .computer-block .computer-text-section h2 {
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 32px;
+    }
+    .computer-block .computer-text-section h3 {
+      margin-top: 25px;
+      font-weight: 400;
+      font-size: 24px;
+    }
+    .computer-block .computer-text-section button {
+      background-color: #e3170a;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      width: 308px;
+      height: 66px;
+      font-weight: 700;
+      font-size: 24px;
+      margin: 25px 0 25px;
+    }
+    .computer-block #computer-text-section-girl {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+    }
+    .computer-block #computer-girl {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    footer {
+      background-color: #011827;
+      color: #ffffff;
+      padding: 64px 22px;
+      height: 467px;
+      margin-top: 180px;
+      font-size: 18px;
+    }
+    footer .footer-elements {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 106px;
+    }
+    footer .footer-elements .footer-text {
+      max-width: 500px;
+    }
+    footer .footer-elements .footer-text p {
+      margin-top: 8px;
+    }
+    footer .footer-elements .footer-links {
+      margin-left: 132px;
+      white-space: nowrap;
+    }
+    footer .footer-elements .footer-links ul {
+      margin-top: 8px;
+    }
+    footer .footer-elements .footer-links ul a {
+      color: inherit;
+      text-decoration: none;
+      list-style: none;
+    }
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+  }
+  
+  li,
+  button {
+    cursor: pointer;
+  }
+  
+  button:active {
+    transform: scale(1.02);
+    transition: 0.1s;
+  }
+  
+  @media screen and (max-width: 800px) {
+    header {
+      background-color: #011827;
+      color: #ffffff;
+    }
+    header .top-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 144px;
+      min-width: 200px;
+      width: 100%;
+    }
+    header .top-section .esc-logo {
+      width: 128px;
+      height: 82px;
+      margin-left: 20px;
+    }
+    header .top-section h1 {
+      flex-direction: column;
+      margin-left: 13px;
+      width: 78px;
+      height: 84px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    header .top-section .s-menu-icon {
+      position: absolute;
+      top: 38px;
+      right: 20px;
+      width: 51px;
+      height: auto;
+    }
+    nav {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      background-color: #011827;
+      color: #ffffff;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      box-shadow: 0px 0px 20px #011827;
+      transform: scale(0.94);
+    }
+    nav a {
+      color: inherit;
+      text-decoration: none;
+      list-style: none;
+    }
+    nav a li {
+      list-style: none;
+      margin: 50px 0;
+      padding: 5px;
+      font-size: 36px;
+      font-weight: 700;
+    }
+    .nav-menu-mobile {
+      display: flex;
+      -webkit-animation: navMenuMobile 0.4s ease-in-out;
+              animation: navMenuMobile 0.4s ease-in-out;
+      z-index: 2;
+    }
+    .nav-menu-mobile .close-icon {
+      width: 45px;
+      height: auto;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+    @-webkit-keyframes navMenuMobile {
+      from {
+        transform: scale(0.91);
       }
-    /*Now positioning*/
-
-
-    .middle-p-btn2 {/*Middle page buttons -red one*/
-
-        margin:15px;
-
     }
-
-
-   
-    .Header-button-container{ /* desktop view for the first two buttons*/
-       /* background-color: */
-        display:flex;
-        flex-direction: row;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: -25px;
-         
+    @keyframes navMenuMobile {
+      from {
+        transform: scale(0.91);
+      }
     }
-
-    .Header-button-container > *{
-      flex-grow :1;
-      
-
-
+    .background-opacity {
+      transition: 0.1s;
+      transition-timing-function: ease-in-out;
+      opacity: 0.5;
     }
-
-    .Grid2 figure img {
-     padding-left: 17vh;
-     
-
+    .hacker-image {
+      width: 100%;
+      height: auto;
     }
-    .Grid{ /*the computer photos*/
-        background-color: #ffffff;
-        display: flex;
-        position: relative;
-        margin-bottom: 0;
-        
-        }
-        .Grid2{
-
-            display: flex;
-            position: relative;
-            margin-bottom: 0;
-            flex-direction: row-reverse;
-
-        }
-
-
- /*Stop changing this , it's for the header buttons*/
- .header-btn2 {
-    padding-left: 50px;
-    padding-right: 50px;
-    
-
-   
-
-}
-
-    .Popular-G {
-        margin-left: 30%;
-        font-size: 40px;
-        font-weight: 400;
-
+    .hacker-image-desktop {
+      display: none;
     }
-
-    /*testing the grid  */
-    .aside-container {
-        position: relative;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        background-color: none;
-        padding: 10px;
-        margin-top: 40vh;
-        margin-left: 30%;
-        font-family: Roboto;
-        font-size: 17px;
-        font-style: italic;
-        max-width: 900px;
-        place-items: center;
-        font-weight: 500;
-
+    .buttons {
+      margin-top: 37px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
-
-   
-
-
-
-
-    .second-aside1,
-    .first-aside1 {
-        background-color: rgba(255, 255, 255, 0.8);
-        /* border: 1px solid rgba(0, 0, 0, 0.8);*/
-        padding: 20px;
-        text-align: center;
-        max-width: 400px;
-
-
+    .buttons .on-site-btn {
+      background-color: #8acfe5;
+      color: #011827;
+      border-radius: 4px;
+      border: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      width: 308px;
+      padding: 19px 40px;
     }
-
-    .second-aside1 img,
-    .first-aside1 img {
-        position: relative;
-        border-radius: 50%;
-        top: 0px;
-        right: 20vh;
-
+    .buttons .online-btn {
+      color: #36769d;
+      background-color: transparent;
+      border: none;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: underline;
+      margin-top: 30px;
     }
-
-    .first-aside1 span,
-    .second-aside1 span {
-        font-size: 10px;
-        padding: 0;
-        margin: 0;
-
+    .review-boxes {
+      display: flex;
     }
-
-    #content1::before {
-        content: "\a";
-        white-space: pre;
+    .review-boxes #hidden-mobile-layout {
+      display: none;
     }
-
-    #content3::before {
-        content: "\a";
-        white-space: pre;
+    .review-boxes .review {
+      display: flex;
+      justify-content: center;
+      margin-top: 80px;
+      padding: 0 15px;
     }
-
-    .second-aside1 p,
-    .first-aside1 p {
-        font-size: 15px;
-        max-width: 260px;
-        max-height: 100px;
-        margin-top: -90px;
+    .review-boxes .review figure img {
+      padding-right: 15px;
     }
-}
-
-/*
-
-.first-aside {
-    margin-top: 470px;
-    margin-bottom: 150px;
-    display: block;
-    margin-left: 5%;
-    padding-left: 80px;
-}
-
-.second-aside {
-    display: block;
-}
-
-.first-aside p {
-    contain: layout;
-   
-    padding-right: 60%;
-
-}
-
-.second-aside {
-    position: absolute;
-    margin-top: -58.7%;
-    /*remember to search on this, why do i have minus values
-    margin-bottom: 150px;
-    display: block;
-    margin-left: 50%;
-    padding-left: 1px;
-}
-
-.second-aside p {
-    padding-left: 2%;
-    padding-right: 30%;
-
-}
-*/
+    .review-boxes .review .review-text {
+      font-weight: 400;
+      font-size: 24px;
+      font-style: italic;
+      width: 80%;
+    }
+    .review-boxes .review .review-text .review-info {
+      margin-top: 8px;
+      font-style: normal;
+      font-size: 18px;
+    }
+    section h1 {
+      font-weight: 400;
+      font-size: 36px;
+      margin: 105px 20px 0;
+      text-align: center;
+    }
+    section .challenges-section {
+      display: flex;
+      overflow: scroll;
+    }
+    section .challenges-section::-webkit-scrollbar {
+      display: none;
+    }
+    section .challenges-section .challenges {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      min-width: 363px;
+      min-height: 446px;
+      margin: 40px 10px 7px 10px;
+    }
+    section .challenges-section .challenges .challenges-box-image img {
+      width: 100%;
+      min-width: 363px;
+      height: auto;
+      border-radius: 8px 8px 0 0;
+    }
+    section .challenges-section .challenges .rating {
+      padding: 0 18px;
+    }
+    section .challenges-section .challenges .rating p:first-child {
+      font-size: 28px;
+      margin-top: 12px;
+    }
+    section .challenges-section .challenges .rating .rating-stars-text {
+      display: flex;
+      margin-left: -5px;
+    }
+    section .challenges-section .challenges .rating .rating-stars-text img {
+      width: 15px;
+      height: 15px;
+      margin: 0 5px;
+    }
+    section .challenges-section .challenges .rating .rating-stars-text p {
+      font-size: 14px;
+    }
+    section .challenges-section .challenges .rating .challenges-info {
+      margin-top: 23px;
+      font-size: 18px;
+    }
+    section .challenges-section .challenges .rating .book-room {
+      width: 180px;
+      height: 44px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #e3170a;
+      border: none;
+      border-radius: 4px;
+      margin: 30px 0 0 148px;
+    }
+    section .story-container {
+      background-color: #011827;
+      color: #ffffff;
+      min-height: 500px;
+      margin-top: 56px;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+    }
+    section .story-container p {
+      font-weight: 400;
+      font-size: 28px;
+      margin: 95px 21px 60px;
+    }
+    section .story-container button {
+      color: #8acfe5;
+      background-color: #011827;
+      border: #8acfe5 solid 2px;
+      width: 308px;
+      margin: 0 auto;
+      height: 66px;
+      font-weight: 700;
+      font-size: 24px;
+    }
+    .computer-block img {
+      width: 100%;
+      height: auto;
+    }
+    .computer-text-section {
+      padding: 30px;
+    }
+    .computer-text-section h2 {
+      font-weight: 700;
+      font-size: 32px;
+    }
+    .computer-text-section h3 {
+      margin-top: 22px;
+      font-weight: 400;
+      font-size: 24px;
+    }
+    .computer-text-section button {
+      background-color: #e3170a;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      width: 308px;
+      height: 66px;
+      font-weight: 700;
+      font-size: 24px;
+      margin: 60px 0 30px;
+    }
+    footer {
+      background-color: #011827;
+      color: #ffffff;
+      padding: 64px 22px;
+      font-size: 18px;
+    }
+    footer .footer-text p {
+      margin-top: 8px;
+    }
+    footer .footer-links {
+      margin-top: 40px;
+    }
+    footer .footer-links ul {
+      margin-top: 8px;
+    }
+    footer .footer-links ul a {
+      color: inherit;
+      text-decoration: none;
+      list-style: none;
+    }
+  }/*# sourceMappingURL=styles.css.map */
