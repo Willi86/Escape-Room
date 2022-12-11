@@ -1,0 +1,303 @@
+@import "variables-mixin";
+@import "desktop-layout";
+
+// styles for alll screens
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $font-family;
+  font-style: normal;
+}
+
+li,
+button {
+  cursor: pointer;
+}
+button:active {
+  @include button-click;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    background-color: $dark-color;
+    color: $white-color;
+    .top-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 144px;
+      min-width: 200px;
+      width: 100%;
+
+      .esc-logo {
+        width: 128px;
+        height: 82px;
+        margin-left: 20px;
+      }
+
+      h1 {
+        flex-direction: column;
+        margin-left: 13px;
+        width: 78px;
+        height: 84px;
+
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .hamburger-icon {
+        position: absolute;
+        top: 38px;
+        right: 20px;
+        width: 51px;
+        height: auto;
+      }
+    }
+  }
+
+  nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-color;
+    color: $white-color;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0px 0px 20px $dark-color;
+    transform: scale(0.94);
+
+    a {
+      @include a-tags;
+
+      li {
+        list-style: none;
+        margin: 50px 0;
+        padding: 5px;
+        font-size: 36px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .nav-menu-mobile {
+    display: flex;
+    animation: navMenuMobile 0.4s ease-in-out;
+    z-index: 2;
+
+    .close-icon {
+      width: 45px;
+      height: auto;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+  }
+
+  @keyframes navMenuMobile {
+    from {
+      transform: scale(0.91);
+    }
+  }
+  .background-opacity {
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+    opacity: 0.5;
+  }
+
+  .hacker-image {
+    width: 100%;
+    height: auto;
+  }
+  .hacker-image-desktop {
+    display: none;
+  }
+  .buttons {
+    margin-top: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .on-site-btn {
+      @include lightblue-button;
+    }
+    .online-btn {
+      @include darkblue-text-button;
+    }
+  }
+  .review-boxes {
+    display: flex;
+
+    #hidden-mobile-layout {
+      display: none;
+    }
+
+    .review {
+      display: flex;
+      justify-content: center;
+      margin-top: 80px;
+      padding: 0 15px;
+
+      figure img {
+        padding-right: 15px;
+      }
+      .review-text {
+        font-weight: 400;
+        font-size: 24px;
+        font-style: italic;
+        width: 80%;
+
+        .review-info {
+          margin-top: 8px;
+          font-style: normal;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  section {
+    h1 {
+      font-weight: 400;
+      font-size: 36px;
+      margin: 105px 20px 0;
+      text-align: center;
+    }
+    .challanges-section {
+      display: flex;
+      overflow: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .challanges {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        min-width: 363px;
+        min-height: 446px;
+        margin: 40px 10px 7px 10px;
+
+        .challanger-box-image img {
+          width: 100%;
+          min-width: 363px;
+          height: auto;
+          border-radius: 8px 8px 0 0;
+        }
+        .rating {
+          padding: 0 18px;
+
+          & p:first-child {
+            font-size: 28px;
+            margin-top: 12px;
+          }
+          .rating-stars-text {
+            display: flex;
+            margin-left: -5px;
+
+            img {
+              width: 15px;
+              height: 15px;
+              margin: 0 5px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+          .challange-info {
+            margin-top: 23px;
+            font-size: 18px;
+          }
+          .book-room {
+            width: 180px;
+            height: 44px;
+            font-size: 16px;
+            font-weight: 700;
+            color: $white-color;
+            background-color: $red-color;
+            border: none;
+            border-radius: 4px;
+            margin: 30px 0 0 148px;
+          }
+        }
+      }
+    }
+    .story-container {
+      background-color: $dark-color;
+      color: $white-color;
+      min-height: 500px;
+      margin-top: 56px;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+
+      p {
+        font-weight: 400;
+        font-size: 28px;
+        margin: 95px 21px 60px;
+      }
+      button {
+        color: $lightblue-color;
+        background-color: $dark-color;
+        border: $lightblue-color solid 2px;
+        width: 308px;
+        margin: 0 auto;
+        height: 66px;
+        font-weight: 700;
+        font-size: 24px;
+      }
+    }
+  }
+  .computer-block {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .computer-text-section {
+    padding: 30px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 32px;
+    }
+    h3 {
+      margin-top: 22px;
+      font-weight: 400;
+      font-size: 24px;
+    }
+    button {
+      @include red-button;
+      margin: 60px 0 30px;
+    }
+  }
+  footer {
+    background-color: $dark-color;
+    color: $white-color;
+    padding: 64px 22px;
+    font-size: 18px;
+
+    .footer-text {
+      p {
+        margin-top: 8px;
+      }
+    }
+    .footer-links {
+      margin-top: 40px;
+
+      ul {
+        margin-top: 8px;
+        a {
+          @include a-tags;
+        }
+      }
+    }
+  }
+}
